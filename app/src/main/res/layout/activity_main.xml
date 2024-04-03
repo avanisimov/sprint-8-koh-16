@@ -1,148 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <LinearLayout
+    <Button
+        android:id="@+id/app_settings"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/default_margin"
-        android:background="#ff0"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="Настройки приложения" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#0f0"
-            android:text="@string/appbar_scrolling_view_behavior" />
+    <Button
+        android:id="@+id/relaunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Перезапуск" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="#0ff"
-            android:text="@string/app_name" />
+    <Button
+        android:id="@+id/chooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Диалог выбора" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="button"
-            app:strokeColor="@color/white"
-            android:insetBottom="0dp"
-            android:insetTop="0dp"
-            app:cornerRadius="8dp">
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Уведомления" />
 
-            <!--            <TextView-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:background="@color/black"-->
-            <!--                android:text="@string/appbar_scrolling_view_behavior" />-->
+    <Button
+        android:id="@+id/skype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить в Skype" />
 
-        </com.google.android.material.button.MaterialButton>
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фильтрация" />
 
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="button"
-            app:strokeColor="@color/white"
-            android:insetBottom="0dp"
-            android:insetTop="0dp"
-            android:layout_marginTop="16dp"
-            app:cornerRadius="8dp">
-
-            <!--            <TextView-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_gravity="center"-->
-            <!--                android:background="@color/black"-->
-            <!--                android:text="@string/appbar_scrolling_view_behavior" />-->
-
-        </com.google.android.material.button.MaterialButton>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:text="abcde" />
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:background="@drawable/info_background"
-                android:tint="@color/white"
-                android:padding="8dp"
-                android:src="@drawable/baseline_info_24" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="asdjhfsd sbjdsv j"
-                android:layout_height="wrap_content">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/default_margin"
-            android:gravity="center"
-            android:weightSum="3"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="abcde" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/info_background"
-                app:tint="@color/white"
-                android:padding="8dp"
-                android:src="@drawable/baseline_info_24" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="asdjhfsd sbjdsv j">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <include layout="@layout/my_component" />
-
-        <include layout="@layout/my_component" />
-
-        <include layout="@layout/my_component" />
-
-        <include layout="@layout/my_component" />
-
-        <include layout="@layout/my_component" />
-
-
-    </LinearLayout>
-
-</FrameLayout>
+</LinearLayout>
